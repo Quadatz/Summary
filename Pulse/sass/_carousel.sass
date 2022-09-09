@@ -1,0 +1,48 @@
+.carousel
+    padding: 81px 0
+    &__inner
+        position: relative
+        height: 527px
+        width: 750px
+        margin: 0 auto
+    .slick
+        &-prev
+            position: absolute
+            top:50%
+            left: -66px
+            transform: translateY(-50%)
+            border: none
+            background: none
+        &-next
+            position: absolute
+            top:50%
+            right: -66px
+            transform: translateY(-50%)
+            border: none
+            background: none
+@media (max-width: 991px)
+    .carousel
+        padding: 81px 0
+        &__inner
+            position: relative
+        .slick-track
+            img
+                margin: auto
+@media (max-width: 767px)
+    .carousel
+        padding: 81px 0
+        &__inner
+            position: relative
+            height: 300px
+            width: 400px
+            margin: 0 auto
+        &-item
+            width: 400px
+@media (max-width: 575px)
+    .carousel
+        &-item
+            width: 310px
+
+
+
+                    
