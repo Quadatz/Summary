@@ -1,6 +1,6 @@
 import MainInfo from './components/main-info/main-info';
-import StackList from './components/stack-list/stack-list';
 import './App.sass';
+import StackList from './components/stack-list/stack-list';
 
 function App() {
   return (
