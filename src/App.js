@@ -1,8 +1,14 @@
-import './App.css';
+import MainInfo from './components/main-info/main-info';
+import StackList from './components/stack-list/stack-list';
+import './App.sass';
 
 function App() {
   return (
-    <h2>Hello world!</h2>
+    <div className='main'>
+      <header>Роман Савранский</header>
+      <MainInfo/>
+      <StackList/>
+    </div>
   );
 }
 
