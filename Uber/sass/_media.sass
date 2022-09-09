@@ -1,0 +1,241 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+            a
+                font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .reasons
+        &_block
+            align-items: flex-start
+        &_descr
+            width: 300px
+    .mobile
+        &_item
+            width: 300px
+    .footer
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &_wrapper > div
+            &:nth-child(1)
+                margin-top: 17px
+                order: 2
+                display: flex 
+                justify-content: center  
+        &_wrapper > div
+            &:nth-child(2)
+                width: 400px
+        &_wrapper > div
+            &:nth-child(3)
+                margin-top: 15px
+                justify-content: center
+                order: 3
+        &_mobile
+            margin-top: 10px      
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 10px
+            a
+                font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone 
+            font-size: 18px
+        &_btn
+            width: 100%
+            height: 40px
+            margin-top: 21px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+        &_descr
+            margin-top: 20px
+
+    .choice
+        &_img
+            width: 700px
+
+    .footer
+        &_wrapper > div
+            &:nth-child(3)
+                width: 300px
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh   
+        padding: 20px 15px
+        transition: 0.5s all
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        background-color: rgba(0,0,0,.8)
+        &_active
+            left: 0
+        &_item
+            margin: 10px 0
+            padding-right: 0
+            border-right: none
+            a
+                font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                    transition: 0.5s all
+                &:nth-child(2)
+                     display: none
+                &:nth-child(3)
+                    transform: rotate(45deg)
+                    transition: 0.5s all
+    .subheader
+        &_phone
+            font-size: 18px
+            width: 200px
+        &_btn 
+            display: block
+            margin: 0 auto
+            margin-top: 10px
+            height: 40px
+            width: 200px
+
+    .promo
+        &_header
+            line-height: 45px
+
+    .choice
+        &_img
+            width: 500px
+
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+@media (max-width: 575px)
+    .menu
+        width: 75%
+    .subheader
+        height: 60px
+        &_official
+            display: none
+        &_logo 
+            margin-top: 16px
+        &_phone
+            font-size: 12px
+            width: 150px
+            text-align: center
+        &_btn
+            margin-top: 5px
+            height: 22px
+            width: 110px
+            font-size: 10px
+    .promo
+        padding-top: 100px
+        min-height: 400px
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+        &_subheader
+            font-size: 20px
+    .reasons
+        padding: 22px 0 36px 0
+        padding-top: 23px
+        .title
+            font-size: 15px
+            margin-top: 16px
+        &_block
+            margin-top: 26px
+        &_round
+            margin-right: 0
+            height: 100px
+            width: 100px
+        &_text
+            width: 100%
+            font-size: 16px
+    .mobile
+        .container
+            .title
+                margin-top: 14px
+                font-size: 17px
+            .subtitle
+                margin-top: 9px
+        &_item
+            width: 284px
+    .choice
+        z-index: -2
+        min-height: 400px
+        height: 450px
+        .container
+            .black
+                z-index: -1
+            .title
+                display: none
+            .subtitle
+                display: none
+        &_descr
+            color: white
+            margin-top: 23px
+            z-index: 1
+        &_img
+            width: 300px
+    .world
+        min-height: 360px
+        height: 360px
+        .container
+            .title
+                margin-top: 16px
+                font-size: 16px
+                line-height: 16px
+            .subtitle
+                margin-top: 11px
+                font-size: 14px
+        &_link
+            font-size: 12px
+
+
+    .footer
+        &_links
+            &_main
+                width: 320px
+                margin: 0 auto
+                a
+                    font-size: 13px
+            &_sub
+                width: 320px
+                margin: 0 auto
+                margin-top: 10px
+                a
+                    font-size: 9px
