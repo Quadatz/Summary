@@ -1,7 +1,7 @@
 import MainInfo from './components/main-info/main-info';
-import './App.sass';
 import StackList from './components/stack-list/stack-list';
 import MyCarousel from './components/carousel';
+import './App.sass';
 
 function App() {
   return (
