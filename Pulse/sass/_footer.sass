@@ -1,0 +1,66 @@
+.footer
+    height: 630px
+    position: relative
+    &__map
+        overflow: hidden
+    &__info
+        position: absolute
+        height: 270px
+        width: 460px
+        top: 49px
+        left: 50%
+        background-color: $main-color
+        transform: translateX(-50%)
+        address
+            display: block
+            color: #fff
+            margin-top: 50px
+            font-size: 20px
+            text-align: center
+            span
+                font-family: 'MuseoModerno'
+    &__phone
+        color: white
+        display: block
+        height: 20px
+        font-size: 14px
+        text-align: center
+        font-family: 'MuseoModerno'
+        transition: 0.3s all
+        &:hover
+            color: #7cffff
+            font-size: 16px
+    &__social
+        display: flex
+        margin-top: 30px
+        flex-direction: row
+        justify-content: center
+        &-item
+            display: flex
+            height: 52px
+            width: 52px
+            margin: 0 13px
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            border: 2px solid white
+            img
+                height: 25px
+                width: 25px
+                transition: 0.1s all
+                &:hover
+                    height: 30px
+                    width: 30px
+    &__map
+        width: 100%
+        iframe
+            height: 630px
+            width: 100%
+
+
+@media (max-width: 992px)
+    .footer
+        &__info
+            height: 200px
+            width: 300px
+            top: 0
