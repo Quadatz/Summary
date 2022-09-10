@@ -14,35 +14,31 @@ class RepoList extends Component {
   slides = [
     {
       key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"Uber"}/>
     },
     {
       key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"Pulse"}/>
     },
     {
       key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"Portfolio"}/>
     },
     {
       key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"Food"}/>
     },
     {
       key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"React"}/>
     },
     {
       key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"React Images"}/>
     },
     {
       key: v4(),
-      content: <RepoCard />
-    },
-    {
-      key: v4(),
-      content: <RepoCard />
+      content: <RepoCard name={"React-Redux Github"}/>
     }
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
