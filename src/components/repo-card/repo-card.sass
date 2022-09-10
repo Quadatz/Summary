@@ -7,12 +7,35 @@
     h2
         color: black
         transition: .4s all
+        margin: 0
         &:hover
             color: #0084ff
     a
+        color: black
         text-decoration: none
     &__img
         display: block
         margin: 0 auto
         width: 100%
         border-radius: 10px
+    &__wrapper
+        padding-top: 20px
+        display: flex
+        justify-content: space-between
+    span
+        padding-top: 5px
+        color: black
+        display: block
+
+@media screen and (max-width: 650px)
+    .repo-card
+        width: 300px
+        height: 250px
+        h2
+            font-size: 14px
+@media screen and (max-width: 425px)
+    .repo-card
+        width: 240px
+        height: 200px
+        span
+            font-size: 12px

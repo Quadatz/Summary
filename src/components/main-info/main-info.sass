@@ -4,7 +4,8 @@
     padding: 20px
     background-color: #2e2e2e
     width: 600px
-    height: 425px
+    height: max-content
+    min-height: 425px
     border-radius: 10px
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     &__photo
@@ -48,3 +49,18 @@
         color: black
         text-align: center
         font-weight: bold
+
+@media screen and (max-width:  650px)
+    .main-info
+        margin-top: 20px
+        margin: 0 auto
+        flex-direction: column
+        height: max-content
+        width: 380px
+        &__side
+            display: block
+            margin: 0 auto
+@media screen and (max-width: 425px)
+    .main-info
+        width: 280px
+        margin-top: 20px

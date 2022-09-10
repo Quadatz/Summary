@@ -14,31 +14,31 @@ class RepoList extends Component {
   slides = [
     {
       key: v4(),
-      content: <RepoCard name={"Uber"}/>
+      content: <RepoCard name={"Uber"} subtitle={"Сентябрь 2021"}/>
     },
     {
       key: v4(),
-      content: <RepoCard name={"Pulse"}/>
+      content: <RepoCard name={"Pulse"} codeLink={"https://github.com/Quadatz/Pulse"} subtitle={"Ноябрь 2021"}/>
     },
     {
       key: v4(),
-      content: <RepoCard name={"Portfolio"}/>
+      content: <RepoCard name={"Portfolio"} codeLink={"https://github.com/Quadatz/Portfolio"} subtitle={"Ноябрь 2021"}/>
     },
     {
       key: v4(),
-      content: <RepoCard name={"Food"}/>
+      content: <RepoCard name={"Food"} codeLink={"https://github.com/Quadatz/Food"} subtitle={"Январь 2022"}/>
     },
     {
       key: v4(),
-      content: <RepoCard name={"React"}/>
+      content: <RepoCard name={"React"} codeLink={"https://github.com/Quadatz/React"} subtitle={"Февраль 2022"}/>
     },
     {
       key: v4(),
-      content: <RepoCard name={"React Images"}/>
+      content: <RepoCard name={"React Images"} codeLink={"https://github.com/Quadatz/test-task-react"} subtitle={"Сентябрь 2022"}/>
     },
     {
       key: v4(),
-      content: <RepoCard name={"React-Redux Github"}/>
+      content: <RepoCard name={"React-Redux Github"} codeLink={"https://github.com/Quadatz/react-redux-tailwind.ts"} subtitle={"Август 2021"}/>
     }
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };

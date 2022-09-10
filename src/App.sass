@@ -1,10 +1,15 @@
 * 
     color: white
     box-sizing: border-box
+body
+    overflow-x: hidden
 .main
+    padding-bottom: 50px
     background-color: #383838
     width: 100vw
     min-height: 100vh
+    &-wrapper
+        display: flex
 header
     background-color: #7700ff
     padding: 10px
@@ -13,3 +18,28 @@ header
     color: white
 .d-flex
     display: flex
+.fl-c
+    display: flex
+    flex-direction: column
+
+@media screen and (max-width:  1440px)
+    .main-info_stack-list
+        display: flex
+    .main
+        &-wrapper
+            flex-direction: column
+@media screen and (max-width:  1024px)
+    .main-info_stack-list
+        display: block
+        margin: 0 auto
+    .main
+        &-wrapper
+            flex-direction: column
+@media screen and (max-width:  650px)
+    .main-info_stack-list
+        display: block
+        margin: 0 auto
+    .main
+        &-wrapper
+            flex-direction: column
+    

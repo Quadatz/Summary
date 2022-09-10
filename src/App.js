@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='main'>
       <header>Роман Савранский</header>
-      <div className='d-flex'>
-        <div>
+      <div className='main-wrapper'>
+        <div className='main-info_stack-list'>
           <MainInfo />
           <StackList />
         </div>
